@@ -201,48 +201,13 @@
    <div  id="chouette4"></div>
   
          <div class="prev"> <img id="prev4" src="img/prev.png" alt="menu" class="arrow-left" /></div>
-        <div class="next"> <img id="next4" src="img/next.png" alt="menu" /> </div>
+        <div class="next"> <A href="chapitre2.html">  <img id="next4" src="img/next.png" alt="menu" /> </A></div>
       </div>
     </div>
     
     <!-- Fin page 4--> 
     
  
-      <div class="swiper-slide page5" data-hash="slide5" id="slide5">
-      <div id="text">
-        <div id="video5">
-        	<video  width="100%" height="100%" id="videotest5"  loop="true"    >
-  				<source src="resources/1E.mp4" type="video/mp4"   />
- 
-			</video>
-      	</div>
-
-        <div class="encart ">
-          <div id="lecture">
-            <div id="ecrit" class="ecrit"> </div>
-            <div id="son5" class="son">
-              <audio id="voix5" preload="auto" autostart="false" type="audio/mpeg">
-                <source src="voix/chapitre5.mp3" autostart="false" type="audio/mpeg"  >
-              </audio>
-            </div>
-            <audio id="bruit5" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a5.mp3" autostart="false" type="audio/mpeg"  >
-            </audio>
-          </div>
-          <div class="texte"> <span class="titre">Le sacrifice</span> <br />
-            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
-      Il est impossible d’échapper aux décisions des dieux, aussi cruelles soient-elles. Aussi on amena Psyché à l’endroit indiqué et on la laissa seule. Tant qu’elle était accompagnée, elle était restée courageuse pour ne pas affliger davantage sa famille. Mais quand elle fut seule, elle ne put s’empêcher de pleurer : qu’avait-elle fait pour mériter de périr ainsi ? Soudain, elle sentit un souffle puissant et invisible qui l’environnait et la soulevait dans les airs. De terreur, elle s’évanouit.</div>
-        </div>
-          <div id="bulle5BIG">Ce fils de Zeus, qui délivrera Prométhée, c’est Héraklès, le plus grand des héros grec, celui qui accomplira les fameux douze travaux.</div>
-
-   <div  id="chouette5"></div>
-  
-         <div class="prev"> <img id="prev5" src="img/prev.png" alt="menu" class="arrow-left" /></div>
-        <div class="next"> <a href="chapitre2.html"><img id="next5" src="img/next.png" alt="menu" /></a> </div>
-      </div>
-    </div>
-    
-    <!-- Fin page 5--> 
     
     
   </div>
@@ -381,29 +346,7 @@ $('#next3').click(function(){
 	
 });
 
-$('#next4').click(function(){
-	$(".animpage4").addClass( "pause" );
-	$(".animpage5").removeClass( "pause" );
-	$( ".swiper-wrapper" ).animate({
-  
-    left: "-500%",
 
-  }, 500, function() {
-    // Animation complete.
-  });
-		$('#bruit5').playMedia();
-		$('#voix5').playMedia();
-			$('#bruit4').pauseMedia();
-		$('#voix4').pauseMedia();
-		   
-		     var video4 = $('#videotest4');
-	    var video5= $('#videotest5');
-       video4[0].pause(); 	
-           video5[0].play();	  
-           return false;
-
-	
-});
 
 
 
